@@ -1,0 +1,10 @@
+@font-face {
+
+    font-family: 'Novecento sans wide Light';
+
+    src: url('/Images/Fonts/Novecentosanswide-DemiBold-webfont.woff2') format('woff2'), 
+         url('/Images/Fonts/Novecentosanswide-DemiBold-webfont.woff') format('woff');
+
+         font-weight: 0;
+         font-style: normal;
+  }
