@@ -2,7 +2,18 @@
     margin-right:0;
 
 }
+.slick-slide{
+    padding-left:2.5em;
+    padding-right:2.5em;
+}
+   
+.slick-prev:before, .slick-next:before { 
+    color:#2ecc71 !important;
+ 
+    font-size: 50px !important;
+  
 
+}
 
 .navbar {
 padding-right:0;
@@ -13,16 +24,19 @@ padding-bottom:0;
     
 }
 .container {
-   max-width: 1140px;
+   max-width: 970px;
 }
 .container-fluid {
     padding-right:0;
     padding-left:0;
     margin-right:auto;
     margin-left:auto;
-
+   
 }
-
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 #smedia{
 
     display:flex;
@@ -38,7 +52,7 @@ a{
 
 }
 
-a:active {
+.izbor:active {
     color:#43b765;
 
 }
@@ -57,17 +71,13 @@ a:hover{
 
 
 }
-
 ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
+  
 }
 li {
-    
-    width:50%;
+
 }
+
 hr{
     width: 100%;
 }
@@ -173,18 +183,25 @@ text-align: left;
 .paragraf3{
     padding-bottom:1em;
 }
-img.karuselitem{
-    width:100%;
-    padding-right: 1.4em;
+.karuselitemsl{
+
+    
+ width:120%;
+ height:120%;
+    
   
+}
+.variable-width {
+    width: 310px;
 }
 .karuselkont {
     width:100%;
   
 }
 .karusel {
+    
     padding-top:0.5em;
-    padding-bottom:em;
+   
 }
 .darkit {
     text-align: center;
@@ -217,14 +234,7 @@ img.karuselitem{
       padding-top:0.5em;
 
   }
-  .category-container {
-  
-   
-  }
- .ikonicediv {
-     
-
- }
+ 
 .ikonice {
     margin-top:0.4em;
     margin-left :0.3em;
@@ -260,16 +270,128 @@ img.karuselitem{
  
 }
 
-.item { 
-  
-   
-}
+
 .listapregled {
     display:block;
     overflow: hidden;
 
 }
 .ale{display:1;}
+
+
+/*Contact*/
+
+.mapa {
+   
+    width:100%;
+    height:500px;
+    
+    
+}
+
+.mapa1 {
+ 
+ 
+}
+.pozadinadiv {
+    width: 100%;
+    height:200px;
+    
+    position: relative;
+    
+}
+
+.sve {
+padding-top :2em;
+}
+.input {
+    margin-top:1em;
+    padding:0.5em;
+    border: 1px solid;
+}
+.contactinfo h4 {
+    margin-bottom : 1.2em;
+  
+}
+.sendmessage {
+    padding-top:1em;
+}
+.mail {
+
+    text-transform: none;
+    color: #2ecc71;
+}
+
+.forma button {
+    font-family: 'Novecento sans wide Light';
+    color:white;
+    font-size: 2em;
+    border:0px white;
+    padding:0.5em 1em;
+    background-color :#2ecc71;    
+   vertical-align: middle;
+    margin-top:0.5em;
+    margin-bottom: 1em;
+}
+button h6 {
+    margin: 0;
+}
+
+button:hover {
+    cursor:pointer;
+}
+/*about*/
+
+.sveaaa{
+ padding-top:2.5em;
+}
+.bout {
+    width: 100%;
+    margin-bottom: 1em;
+}
+.par2 {
+    margin-top:1em;
+}
+.par2 p {
+    margin-top:1em;
+    margin-bottom :1em;
+}
+.naslov-tab {
+    margin-top:2em;
+    margin-bottom:2em;
+}
+.tabovi {
+    display: flex;
+    justify-content:center;
+    align-content: center;
+}
+.tabs {
+    background-color:#efefef;
+}
+
+.tabs img {
+    padding :3em;
+}
+
+
+.tabovi:hover {
+    background-color:#dadada;
+    cursor: pointer;
+}
+.tabovi:visited {
+    background-color:#dadada;
+}
+
+.text-flow {
+    margin-top:1em;
+}
+.text-flow ul {
+    color:#929090;
+}
+.visitedactive {
+    background-color:#dadada;
+}
+
 /*futer*/
 
 #footer {
@@ -323,4 +445,20 @@ padding-bottom:2.5em;
   }
   .footerst {
     height: 50px;
+  }
+
+  .clickhere {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+  }
+  .clickheredugme {
+    font-family: 'Novecento sans wide Light';
+    color:white;
+    font-size: 2em;
+    border:0px white;
+    padding:0.5em 1em;
+    background-color :#2ecc71;    
+   vertical-align: middle;
+   
   }
