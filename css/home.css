@@ -1,3 +1,6 @@
+#karusel1 .slick.track:before {
+    width:100%;
+}
 .ha .col-md-1  {
     margin-right:0;
 
@@ -7,14 +10,49 @@
     padding-right:2.5em;
 }
    
-.slick-prev:before, .slick-next:before { 
-    color:#2ecc71 !important;
+#karusel1 .slick-next:before { 
+    display:none !important;
  
-    font-size: 50px !important;
-  
+ }
+ #karusel1 .slick-prev:before { 
+    display:none !important;
+ 
+ }
+
+.slick-prev:before, .slick-next:before {
+    color: #2ecc71 !important;
+    font-size: 40px !important;
 
 }
-
+.cls-1 {
+    fill: #dadada;
+    fill-rule: evenodd;
+  }
+ #twitter:hover .cls-1{
+    fill: #1DA1F2;
+    fill-rule: evenodd;
+  }
+  #facebook:hover .cls-1 {
+    fill: #3b5998;
+    fill-rule: evenodd;
+  }
+  #rss:hover .cls-1 {
+    fill:#f69537;
+    fill-rule: evenodd;
+  }
+  #pinterest:hover .cls-1 {
+    fill:#BD081c;
+    fill-rule: evenodd;
+  }
+  #googlep:hover .cls-1 {
+   
+    fill: #ef5b49;
+    fill-rule: evenodd;
+  }
+  #dribble:hover .cls-1 {
+    fill:#EA4C89;
+    fill-rule: evenodd;
+  }
 .navbar {
 padding-right:0;
 padding-bottom:0;
@@ -24,7 +62,7 @@ padding-bottom:0;
     
 }
 .container {
-   max-width: 970px;
+ 
 }
 .container-fluid {
     padding-right:0;
@@ -105,7 +143,7 @@ h4, h5{
 
 .bgimage {
     background-image: url("../Images/Assets/Home/Slider.png");
-    height: 100%;
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -114,16 +152,22 @@ h4, h5{
  
 }
 .uredjaji {
-   
+    animation: fadeIn 1s 0.5s;
+    animation-fill-mode: both;   
 width: 90%;
 }
 #uredjaji{
     padding-top: 2em;
+    
+}
+.paragraf1 {
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: both;
 }
 .paragraf1 p {
     font-size: 1em;
     text-align: center;
-    padding-top:2em;
+   
   
 }
 
@@ -132,6 +176,8 @@ width: 90%;
     justify-content: center;
     padding-bottom:2em;
     padding-top:0.5em;
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: both;
 }
 
 #sekcija2{
@@ -143,12 +189,10 @@ width: 90%;
     padding-bottom:2em;
 
 }
-.video {
-    width: 100%;
-    height:0;
-    padding-bottom:56%;
-    position: relative;
+.popupbut {
+    width:100%;
 }
+
 .yt {
     position: absolute;
     width:100%;
@@ -190,6 +234,9 @@ text-align: left;
  height:120%;
     
   
+}
+.karusel1 {
+    padding:0;
 }
 .variable-width {
     width: 310px;
@@ -255,15 +302,20 @@ text-align: left;
 
 
 .portfolioimg {
-   object-fit: cover;
-   width:100%;
-   height:100%;
+    width: 100%;
+    object-fit: cover;
+    height: 270px;
     padding:0;
     padding-top:2em;
+   
 }
 
 
-
+.portfolio {
+    padding: 0;
+    width:100%;
+    height: 100%;
+}
 
 .hide {
   display:none;
@@ -322,7 +374,7 @@ padding-top :2em;
     color: #2ecc71;
 }
 
-.forma button {
+.sendmessage {
     font-family: 'Novecento sans wide Light';
     color:white;
     font-size: 2em;
@@ -333,12 +385,23 @@ padding-top :2em;
     margin-top:0.5em;
     margin-bottom: 1em;
 }
+
+.sendmessage:disabled {
+    background-color: grey;
+    cursor:not-allowed;
+}
 button h6 {
     margin: 0;
 }
 
 button:hover {
     cursor:pointer;
+}
+
+
+.skr 
+{
+    background-color : grey;    
 }
 /*about*/
 
@@ -462,3 +525,89 @@ padding-bottom:2.5em;
    vertical-align: middle;
    
   }
+
+
+  /*MFP*/
+  .mfp-iframe-holder {
+      width: 100%;
+      height: 100%;
+  }
+  .mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out; 
+	-moz-transition: all 0.15s ease-out; 
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/*media queries*/
+
+@media (min-width: 246px) {
+    
+    .paragraf1 p {
+        padding-top:2em;
+    }
+ }
+@media (min-width: 576px) {
+    .bgimage{
+        max-height: 315px;
+    }
+    .paragraf1 p {
+        padding-top:4em;
+    }
+ }
+
+@media (min-width: 768px) {
+    .bgimage{
+        max-height: 400px;
+    }
+    .paragraf1 p {
+        padding-top:4em;
+    }
+    
+ }
+@media (min-width: 992px) {
+    .bgimage{
+        max-height: 505px;
+    }
+    .paragraf1 p {
+        padding-top:6em;
+    }
+}
+
+@media (min-width:1200px) {
+    .bgimage{
+        max-height: 580px;
+    }
+    .paragraf1 p {
+        padding-top:7em;
+    }
+}
+
+/*efekti*/
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
