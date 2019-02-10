@@ -116,10 +116,10 @@
 
         <div class="container " id="about-section">
             <div class="row">
-                <div class=" col-xl-5 ">
+                <div class="col-12 col-md-5 col-xl-5">
                     <img src="/Images/Assets/about/bout.png" class="bout" alt="">
                 </div>
-                <div class="col-xl-7">
+                <div class="col-12 col-md-7 col-xl-7">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus vero esse facere distinctio
                         nihil cum quod similique tenetur fugiat rem quibusdam amet mollitia enim impedit nemo animi
                         qui, blanditiis, aspernatur laborum nobis illum odit accusamus? Reprehenderit ducimus commodi
@@ -178,7 +178,7 @@
         </div>
         <div class="container text-flow " id="tekst">
             <div class="row">
-                <div id="websites" class="websites para hide col-12">
+                <div id="websites" class="websites para hide col-12 hide">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minima saepe temporibus sint at
                         vel ratione similique quia, maiores iure nihil soluta aut provident consectetur odio enim porro
                         placeat aspernatur sunt, fugiat amet reprehenderit voluptatem sed veniam? Voluptate iste,
@@ -231,31 +231,37 @@
 
 
     </div>
-    <footer class="footerst"></footer>
+    <footer class="footer-main">
     <div class="fluid-container" id="footer">
         <div class="container">
             <div class="row footer">
-                <div class="col-12 col-lg-8" id="nasl">
+                <div class="col-12 col-md-8" id="nasl">
                     <h4>ARE YOU READY TO BE BLOWN AWAY ?</h4>
                 </div>
-                <div class="col-auto col-lg-4 clickhere">
-                    <button class="clickheredugme" href="https://tenor.com/view/bomb-atomicbomb-gif-5863256">
+                <div class="col-auto col-md-4 clickhere">
+                    
+                    <button class="clickheredugme popup-youtube" href="https://media1.giphy.com/media/7GFfijngKbeNy/giphy.gif?cid=3640f6095c5c3ecc356d583967d7704a" >
+                        
                         <h6>CLICK HERE TO FIND OUT </h6>
+                        
                     </button>
+                
+                    
                 </div>
+
             </div>
         </div>
     </div>
 
 
-
-    <div class="fluid-container" id="footer2">
+   
+    <div class="fluid-container" id="footer20">
         <div class="container">
             <div class="row footer2">
-                <div class="col-12 col-lg-9 footer2">
+                <div class="col-12 col-md-12 col-lg-8 footer20" id="footer-20">
                     <h5>COPYRIGHT 2013 DISPLAY ALL RIGHTS RESERVED</h5>
                 </div>
-                <div class="col-12 col-lg-3 footer21">
+                <div class="col-12 col-md-12 col-lg-4 footer21" id="footer-21">
                     <a href="/Index.html">HOME &NonBreakingSpace; / &NonBreakingSpace;&NonBreakingSpace;</a>
                     <a href="/About.html">ABOUT &NonBreakingSpace;/ &NonBreakingSpace;&NonBreakingSpace;</a>
                     <a href="/Work.html">WORK &NonBreakingSpace;/ &NonBreakingSpace;&NonBreakingSpace;</a>
@@ -265,73 +271,10 @@
         </div>
     </div>
 
+</footer>
 
 
-
-
-
-
-
-    
-  <script>
-
-  $('.tabovi').click(function(){
-    var  tab =$(this).attr('id');
-
-
-    if(tab=="websites"){
-        $('#websites').addClass('visitedactive');
-        $('#photography').removeClass('visitedactive');
-        $('#seo').removeClass('visitedactive');
-        $('#applications').removeClass('visitedactive');
-
-        $('.websites').removeClass('hide');
-        $('.photography').addClass('hide');
-        $('.seo').addClass('hide');
-        $('.applications').addClass('hide');
-    }   
-    else if (tab=="photography") {
-        $('#websites').removeClass('visitedactive');
-        $('#photography').addClass('visitedactive');
-        $('#seo').removeClass('visitedactive');
-        $('#applications').removeClass('visitedactive');
-
-        $('.websites').addClass('hide');
-        $('.photography').removeClass('hide');
-        $('.seo').addClass('hide');
-        $('.applications').addClass('hide');
-
-    } else if (tab=="seo") {
-        $('#websites').removeClass('visitedactive');
-        $('#photography').removeClass('visitedactive');
-        $('#seo').addClass('visitedactive');
-        $('#applications').removeClass('visitedactive');
-
-        $('.photography').addClass('hide');
-        $('.seo').removeClass('hide');
-        $('.applications').addClass('hide');
-        $('.websites').addClass('hide');
-
-    } else if (tab=="applications"){
-        $('#websites').removeClass('visitedactive');
-        $('#photography').removeClass('visitedactive');
-        $('#seo').removeClass('visitedactive');
-        $('#applications').addClass('visitedactive');
-
-        $('.photography').addClass('hide');
-        $('.seo').addClass('hide');
-        $('.applications').addClass('hide');
-        $('.websites').removeClass('hide');
-    } else {
-        $('.photography').addClass('hide');
-        $('.seo').addClass('hide');
-        $('.applications').addClass('hide');
-        $('.websites').addClass('hide');
-    }
-  });
- 
-  </script>
-
+<script src="/script/about.js"></script>
   
 </body>
 
