@@ -37,7 +37,7 @@
                 <img src="/Images/Assets/Home/Logo.svg" alt="logo" class="mage-responsive">
             </div>
             <div id="smedia" class=" col-6  col-sm-6 col-md-6  col-lg-6 col-xl-6   ">
-                <nav class="navbar navbar-expand-sm navbar-light">
+                <nav class="navbar navbar-expand-md navbar-light">
 
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
                         <span class="navbar-toggler-icon"></span>
@@ -96,15 +96,16 @@
                 <hr>
             </div>
         </div>
-
-        <div class="row ">
-
-            <a href="Index.html" id="home" class="col-2 col-sm-2 col-md-1 izbor">HOME</a>
-            <a href="About.html" class="col-2  col-sm-2 col-md-1 izbor">ABOUT</a>
-            <a href="Work.html" class=" col-2 col-sm-2 col-md-1  izbor">WORK</a>
-            <a href="Contact.html"  class=" col-2 col-sm-2 col-md-1 izbor">CONTACT</a>
-
+        
+        <div class="row  " id="">
+  
+            <a href="Index.html" id="home" class="col-12 col-md-1 izbor">HOME</a>
+            <a href="About.html" class="col-12 col-md-1 izbor">ABOUT</a>
+            <a href="Work.html" class=" col-12  col-md-1  izbor">WORK</a>
+            <a href="Contact.html"  class=" col-12 col-md-1 izbor">CONTACT</a>
+        
         </div>
+    </nav>
     </div>
 
 
@@ -256,8 +257,7 @@
 
     </div>
 
-    <div class="container">
-        <div class="row">
+    
 
             </p>
         </div>
@@ -313,70 +313,7 @@
 
     <script src="/Vendor/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
     <script src="/Vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('.karusel').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                fade: true,
-                asNavFor: '.karusel1'
-            });
-            $('.karusel1').slick({
-                variableWidth: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                asNavFor: '.karusel',
-                arrows: false,
-                centerMode: true,
-                focusOnSelect: true,
-                responsive: [
-                    {
-                        breakpoint: 1058,
-                        settings: {
-                            slidesToShow: 3,
-                            centerMode: true,
-                            arrows: false,
-
-                            centerPadding: '30px'
-                        }
-                    },
-                    {
-                        breakpoint: 720,
-                        settings: {
-                            slidesToShow: 2,
-                            centerMode: true,
-                            arrows: false,
-
-                            centerPadding: '30px'
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            arrows: false,
-
-                            centerMode: true,
-                            centerPadding: '30px'
-                        }
-                    },
-                ]
-            });
-        });
-    </script>
-    <script>$(document).ready(function () {
-            $('.popup-youtube').magnificPopup({
-                disableOn: 700,
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-
-                fixedContentPos: false
-            });
-        });</script>
+   <script src="script/index.js"></script>
 </body>
 
 </html>
