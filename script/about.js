@@ -96,3 +96,22 @@
           
         }
     });
+   
+    var ctscan = 0;
+    $('.navbar').click(function () {
+        var navMsg = $(this).attr('id');
+        
+        if ($('.navbar').click) {
+            ctscan++;
+        }
+        if (ctscan%2==1) {
+            $('body').css({'overflow-y':'hidden'})
+            $('.mobile').removeClass('hide');
+    
+        } else {
+            $('body').css({'overflow-y':'visible'})
+            
+        }
+    
+    
+    });

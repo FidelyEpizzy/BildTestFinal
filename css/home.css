@@ -64,7 +64,7 @@
     fill-rule: evenodd;
   }
 .navbar {
-padding-right:0;
+padding-right:0.9em;
 padding-bottom:0;
 }
 #header {
@@ -91,10 +91,53 @@ padding-bottom:0;
 
 #smedia{
 
+   display:flex;
+   align-content: center;
+   justify-content: flex-end;
+  
+
+}
+#smedia a {
+    padding-top: 0.5em;
+}
+#mobile-navigation {
     display:flex;
    align-content: center;
    justify-content: flex-end;
+}
+.mobile {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:6.1em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color:white;
+    opacity:0.95;
+    
+}
+#main-menu-row {
+    display:flex;
+   justify-content: center;
+   text-align: center;
+   overflow-y: hidden;
+    
 
+}
+.media-logos {
+    display:flex;
+    justify-content: center;
+}
+
+.main-menu  {
+    margin-top:1em;
+    overflow: scroll;
+    height: 100%;
+}
+#main-menu-row a {
+    margin-top: 2em;
 }
 a{  
 
@@ -156,7 +199,7 @@ h4, h5{
 }
 .media{
    padding-left:0.5em;
-   padding-top:0.3em;
+   padding-top:0.4em;
 }
 .izbor{
     margin-bottom: 1em;
@@ -179,10 +222,13 @@ h4, h5{
 .uredjaji {
     animation: fadeIn 1s 0.5s;
     animation-fill-mode: both;   
-width: 90%;
+    width: 90%;
+    margin-bottom: -6%;
+    
 }
 #uredjaji{
     padding-top: 2em;
+
     
 }
 .paragraf1 {
@@ -192,7 +238,7 @@ width: 90%;
 .paragraf1 p {
     font-size: 1rem;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 12%;
    
   
 }
@@ -555,9 +601,7 @@ padding-bottom:2.5em;
 
 
 }
-.conten1 {
-    min-height: calc(100vh - 70px);
-  }
+
   .footerst {
     height: 50px;
   }
@@ -613,12 +657,14 @@ padding-bottom:2.5em;
 /*sticky footer*/
 html, body {
     height: 100%;
+   
   }
   body {
     display: flex;
     flex-direction: column;
   }
   .conten1 {
+      
     flex: 1 0 auto;
   }
   .footer-main {
@@ -644,7 +690,24 @@ html, body {
         text-align: left;
     }
 }
-
+@media (max-width:770px) {
+    #smedia {
+        display:none;
+    }
+    #menu-items {
+        display:none;
+    }
+}
+@media (min-width:898px){
+    #filteri {
+        display:none;
+    }
+}
+@media (max-width:898px){
+    #filteri-desktop{
+        display: none;
+    }
+}
 /*efekti*/
 @keyframes fadeIn {
     from{
